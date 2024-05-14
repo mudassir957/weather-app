@@ -1,7 +1,7 @@
 const CurrentWeather = ({ data }) => {
   return (
     <div className="flex justify-center">
-      <div className="top w-72 h-72 rounded-md m-4 p-4 bg-blue-900 text-white">
+      <div className="current top w-72 h-72 rounded-md m-4 p-4 bg-blue-900 text-white">
         <div className="flex justify-between items-center">
           <div>
             <p className="text-2xl">{data.city}</p>

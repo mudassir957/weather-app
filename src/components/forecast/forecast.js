@@ -31,11 +31,11 @@ const Forecast = ({ data }) => {
             <AccordionItemHeading>
               <AccordionItemButton>
                 <div className="flex justify-center">
-                  <div className="flex justify-between top h-12 w-9/12 rounded-md bg-blue-900 text-white my-2 py-2">
+                  <div className="headline flex justify-between top h-12 w-9/12 rounded-md bg-blue-900 text-white my-2 py-2">
                     <div className="flex px-2">
                       <img
                         alt="weather"
-                        className="w-8"
+                        className="image w-8"
                         src={`icons/${item.weather[0].icon}.png`}
                       />
                       <label>{forecastDays[index]}</label>
@@ -52,7 +52,7 @@ const Forecast = ({ data }) => {
             </AccordionItemHeading>
             <AccordionItemPanel>
               <div className="flex justify-center">
-                <div className="w-9/12 grid grid-cols-2 gap-x-4 gap-y-0 p-2 text-white">
+                <div className="details w-9/12 grid grid-cols-2 gap-x-4 gap-y-0 p-2 text-white">
                   <div className="flex align-center justify-between">
                     <label>Pressure:</label>
                     <label>{item.main.pressure} hPa</label>

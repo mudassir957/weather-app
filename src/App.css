@@ -3,5 +3,28 @@
 @tailwind utilities;
 
 body {
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 40%, rgb(21, 50, 144) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 40%,
+    rgb(21, 50, 144) 100%
+  );
+}
+
+@media (max-width: 600px) {
+  .current {
+    font-size: small;
+  }
+  .headline {
+    width: 90%;
+    font-size: small;
+    padding: 8px 0px;
+  }
+  .image {
+    height: 32px;
+    width: 32px;
+  }
+  .details {
+    font-size: x-small;
+  }
 }
